@@ -88,6 +88,28 @@
       font-size: 14px;
     }
   </style>
+  <style>
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("nav a");
+      links.forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          const target = link.getAttribute("href");
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            location.hash = target;
+            document.body.classList.remove("fade-out");
+          }, 500);
+        });
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
