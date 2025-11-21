@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SONG SPOT | Official Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #0e0e11;
+      color: #fff;
+    }
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+      opacity: 0.8;
+    }
+    nav a:hover {
+      opacity: 1;
+    }
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero h1 {
+      font-size: 52px;
+      margin: 0;
+    }
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+    .section {
+      padding: 80px 50px;
+    }
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .artists {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .artist-card {
+      background: #1a1a1f;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .artist-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .artist-card div {
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SONG SPOT</div>
+    <nav>
+      <a href="#artists">ARTISTS</a>
+      <a href="#works">WORKS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Music. Creation. Future.</h1>
+    <p>アーティストと音楽制作のすべてをサポートするプロダクション。</p>
+  </section>
+
+  <section id="artists" class="section">
+    <h2>ARTISTS</h2>
+    <div class="artists">
+      <div class="artist-card">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" />
+        <div>
+          <h3>たまっち</h3>
+          <p>ボーカリスト / ソングライター</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="section">
+    <h2>WORKS</h2>
+    <p>・オリジナル曲制作<br>・アーティストマネジメント<br>・MV制作 / 企画<br>・ライブ運営 など</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>CONTACT</h2>
+    <p>お問い合わせは以下フォームより。</p>
+    <p>（ここにフォームを埋め込むエリア）</p>
+  </section>
+
+  <footer>
+    © 2025 SONG SPOT. All Rights Reserved.
+  </footer>
+</body>
+</html>
